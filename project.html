@@ -6,9 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+@media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 <body>
+<<<<<<< HEAD
     <h1>Hello, Mohamed!</h1>
     <p>Hello, Vitor!</p>
+=======
+    <main id ="main-doc">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()">open</span>
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            ...
+          </div>
+        <nav id="navbar" >
+           
+            <a class="nav-link" href="#Abstract">for Abstract click here</a> <br>
+            
+            <a class="nav-link" href="#Introduction">for Introduction click here</a><br>
+            
+            <a class="nav-link" href="#comments">for Comments click here</a><br>
+            
+            <a class="nav-link" href="#JavaScript and Java">for JavaScript and Java click here</a><br>
+            
+            <a class="nav-link" href="#Notes">for Notes click here</a><br>
+        </nav>
+
+        
+        <section class="main-section" id="Abstract">
+            <h1>Abstract</h1>
+            
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi eos beatae nemo quasi ullam provident maiores, corporis iste perferendis laudantium commodi corrupti omnis consequatur inventore impedit incidunt aut similique.
+            </p>
+            <code>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique sapiente, totam mollitia culpa assumenda consequatur! Eaque alias ullam, tempore dolor cum quasi atque error a, quo autem dignissimos sint?
+
+            </code>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur assumenda odit recusandae perferendis rem magnam nesciunt at est aperiam aspernatur non aliquid facilis perspiciatis dolores facere molestias, voluptate quibusdam.</p>
+            <ul>
+                <li>list1 </li>
+                <li> list2</li>
+                <li>list 3</li>
+                <li>list 4</li>
+                <li>list 5</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Introduction">
+
+            <h1>Introduction</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aut facere itaque eveniet libero quod sint nesciunt architecto. Distinctio dolores sint quibusdam vel quaerat debitis expedita excepturi adipisci dolorum maxime?
+            </p>
+            <code>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique sapiente, totam mollitia culpa assumenda consequatur! Eaque alias ullam, tempore dolor cum quasi atque error a, quo autem dignissimos sint?
+                
+            </code>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia dicta dignissimos eaque mollitia sapiente est! Aliquid praesentium, aut veritatis molestiae modi fugiat. Deserunt eos recusandae veritatis amet inventore qui.</p>
+        </section>
+        <section class="main-section" id="JavaScript_and_Java">
+            <h1>JavaScript and Java</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae natus quam ab dolore laborum vel accusamus aliquam architecto deserunt hic voluptates sunt, ut perferendis quae, quia earum quas exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt quisquam libero suscipit minus, magnam esse odit neque dolorem ipsam aliquam soluta? Nisi necessitatibus deserunt non illum! Corrupti, nesciunt optio.
+
+            </p>
+            <code>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique sapiente, totam mollitia culpa assumenda consequatur! Eaque alias ullam, tempore dolor cum quasi atque error a, quo autem dignissimos sint?
+                
+            </code>
+        </section>
+        <section class="main-section" id="comments">
+            <h1>comments</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae reiciendis sequi, atque at quisquam excepturi ipsam aliquid culpa sit illum dolorum totam accusamus incidunt mollitia officiis maxime dolor earum tenetur?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nostrum qui nisi assumenda ab voluptatum possimus numquam sequi ipsum culpa a molestiae maiores, quidem ullam enim aliquam dolor beatae voluptate.
+
+            </p>
+            <code>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique sapiente, totam mollitia culpa assumenda consequatur! Eaque alias ullam, tempore dolor cum quasi atque error a, quo autem dignissimos sint?
+                
+            </code>
+        </section>
+        <section class="main-section" id="Notes">
+            <h1>Notes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam consequatur vero, ducimus molestiae necessitatibus. Tenetur architecto, dicta illo, temporibus, officia nostrum ducimus nulla sed praesentium laboriosam dolor ex omnis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae voluptas eum eaque quasi veritatis odio soluta ipsum quisquam earum! Quia cupiditate laborum nihil nesciunt veniam culpa incidunt quo esse.</p>
+            <code>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique sapiente, totam mollitia culpa assumenda consequatur! Eaque alias ullam, tempore dolor cum quasi atque error a, quo autem dignissimos sint?
+                
+            </code>
+        </section>
+
+
+    </main>
+>>>>>>> 57dfcf3253aff0696b16389566e815dfed700e34
 </body>
 </html>
 <a href=""></a>
